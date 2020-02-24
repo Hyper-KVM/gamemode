@@ -78,9 +78,9 @@ path_includedir = join_paths(path_prefix, get_option('includedir'))
 path_libdir = join_paths(path_prefix, get_option('libdir'))
 path_libexecdir = join_paths(path_prefix, get_option('libexecdir'))
 
-# Find systemd via pkgconfig
+# Find elogind via pkgconfig
 with_systemd = get_option('with-systemd')
-dep_systemd = dependency('libsystemd')
+dep_elogind = dependency('libelogind')
 
 # For the client, libdbus is used
 dep_dbus = dependency('dbus-1')
