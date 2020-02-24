@@ -20,7 +20,7 @@ executable(
     dependencies: [
         link_daemon_common,
         dep_threads,
-        dep_systemd,
+        dep_elogind,
         inih_dependency,
         libdl,
     ],

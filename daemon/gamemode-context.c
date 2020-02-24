@@ -48,7 +48,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <stdatomic.h>
 #include <stdlib.h>
 #include <sys/time.h>
-#include <systemd/sd-daemon.h> /* TODO: Move usage to gamemode-dbus.c */
+#include <elogind/sd-daemon.h> /* TODO: Move usage to gamemode-dbus.c */
 #include <unistd.h>
 
 /**

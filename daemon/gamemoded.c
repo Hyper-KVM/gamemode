@@ -61,7 +61,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <getopt.h>
 #include <signal.h>
 #include <sys/stat.h>
-#include <systemd/sd-daemon.h> /* TODO: Move usage to gamemode-dbus.c */
+#include <elogind/sd-daemon.h> /* TODO: Move usage to gamemode-dbus.c */
 #include <unistd.h>
 
 #define USAGE_TEXT                                                                                 \

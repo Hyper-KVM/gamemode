@@ -36,8 +36,8 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "common-logging.h"
 #include "common-pidfds.h"
 
-#include <systemd/sd-bus.h>
-#include <systemd/sd-daemon.h>
+#include <elogind/sd-bus.h>
+#include <elogind/sd-daemon.h>
 
 #include <assert.h>
 #include <errno.h>
@@ -49,7 +49,7 @@ POSSIBILITY OF SUCH DAMAGE.
  *   The path prefix including \0 (sizeof), another '/', and 10 digits for uint32_t ('%u')*/
 #define GAME_PATH_MAX (sizeof(GAME_PATH_PREFIX) + 11)
 
-/* systemd dbus components */
+/* elogind dbus components */
 static sd_bus *bus = NULL;
 static sd_bus_slot *slot = NULL;
 
