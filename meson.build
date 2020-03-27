@@ -80,7 +80,7 @@ path_libexecdir = join_paths(path_prefix, get_option('libexecdir'))
 
 # Find systemd via pkgconfig
 with_systemd = get_option('with-systemd')
-dep_systemd = dependency('libsystemd')
+dep_systemd = dependency('dbus-1')
 
 # For the client, libdbus is used
 dep_dbus = dependency('dbus-1')
